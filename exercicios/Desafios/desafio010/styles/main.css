@@ -1,0 +1,123 @@
+@font-face {
+            font-family: 'Andro';
+            src: url('fontes/IDroid.otf') format('opentype');
+        }
+
+main {
+    padding: 0 10px 10px 10px;
+    margin: 0 10px 10px 10px;
+}
+
+section {
+    background-color: white;
+    width: 720px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* PRIMEIRA DIV DA SECTION*/
+#sub1 {
+    padding: 20px;
+    margin: 0;
+    font-family: 'Andro';
+    color: #268651;
+}
+
+.texto {
+    text-indent: 20px;
+    text-align: justify; /*Deixa o texto alinhado nos dois lados*/
+    padding: 10px;
+    margin: 0;
+}
+
+.texto-colorido {
+    color: #268651;
+    font-weight: bold;
+}
+
+/* SEGUNDA DIV DA SECTION*/
+.sub-perso {
+    font-family: 'Andro';
+    font-size: 20px;
+    color: #268651;
+    margin: 0 0 0 20px;
+    background-image: linear-gradient(to right, #84e1ad, #ffff);
+}
+
+.texto > a {
+    text-decoration: none;
+    color: #268651;
+    font-weight: bold;
+}
+
+.texto > a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#ponto4 {
+    background-color: #268651;
+    padding: 30px;
+}
+
+#ponto4 > iframe {
+    display: block;
+    margin: auto;
+}
+
+section > #ponto5 {
+    margin: 10px;
+}
+
+#ponto5 {
+    background-color: #84e1ad;
+    border-radius: 10px;
+    
+}
+
+#section-lista {
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 8px #0b3d20af;
+}
+
+.p-final{
+    
+    margin: 10px;
+}
+
+#sub-ultimo {
+    background-color: #268651;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+ol {
+    list-style-type: none;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#lista1, #lista2 {
+    display: inline-block;
+}
+
+#lista1 {
+    margin-right: 90px;
+}
+
+li > span {
+    text-decoration: underline;
+}

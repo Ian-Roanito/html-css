@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace; /* Safe font*/
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pc
+            
+            Medidas Relativas
+            em, ex, rem, Vw, Vh, %
+            16px geralmente = 1em
+            
+            Recomendação Oficial - Usar 'px' e 'em' na font-size!!
+            */
+            font-size: 1em;
+
+            /* font-weight: lighter normal bold bolder 100-900*/
+
+            h1 {
+                /* shorthand font
+                - 1° font-style -> 2° font-weight -> 3° font-size -> 4° font-family (Ordem Importante!! )
+
+                font-family: 'Work Sans', sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;*/
+
+                font: italic bolder 3em 'Work Sans, sans-serif';
+            }
+
+            h2 {
+                font: bold 2em 'Work Sans';
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero eius asperiores, minima enim vel totam culpa odio laudantium fugit, necessitatibus a reiciendis et ex laborum ipsum commodi corrupti nesciunt impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, molestias laborum veritatis totam est quisquam accusantium nam. Velit sunt inventore ratione culpa aperiam rem vitae, excepturi dolores placeat officiis! Cum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum autem repellat sapiente sint nisi nostrum quo nesciunt. Omnis minus cumque fugiat magni vitae, adipisci aut. Tenetur qui soluta velit?</p>
+    <h2>Subtítulo do exercícios</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, corporis mollitia. Molestiae necessitatibus voluptas quisquam voluptatum, consectetur quidem quam nobis? Laudantium dolores iste voluptates iure temporibus, a repellat beatae. Suscipit.</p>
+</body>
+</html>

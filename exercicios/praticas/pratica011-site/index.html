@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>Site teste</title>
+
+    <style>
+        
+        .bloco {
+            height: 80px;
+            width: 80px;
+            display: inline-block;
+        }
+
+        #caixas {
+            background-color: rgb(63, 158, 158);
+            padding: 5px;
+            width: 336px;
+        }
+
+        
+        .caixa1 {
+            background-color: #335ce4;
+        }
+
+        .caixa2 {
+            background-color: #294296;
+        }
+        .caixa3 {
+            background-color: #07278d;
+        }
+        .caixa4 {
+            background-color: #0a166e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site teste de HTML e CSS</h1>
+        <p>Testando os conhecicmentos sobre HTML e CSS abaixo.</p>
+    </header>
+    <nav>
+        <a href="#">Main</a>
+        <a href="#footer">Footer</a>
+        <a href="pag2.html">Segunda Página</a>
+        <a href="pag3.html">Terceira Página</a>
+    </nav>
+    <main>
+        <article>
+            <div class="caixa bloco1">
+                <h2>Artigo 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quidem exercitationem alias cupiditate vero excepturi officia corrupti neque voluptatem maxime quas soluta vel blanditiis suscipit minus error necessitatibus, illo ea!</p>
+            </div>
+            <div class="caixa bloco2">
+                <h2>Artigo 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae odit natus, sapiente aut quasi error consectetur fuga temporibus accusamus officiis voluptatem aliquid voluptas aliquam nisi ex. Ut beatae repellendus repellat?</p>
+            </div>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/raiden-ei-corte2.jpg" type="image/jpg">
+                <img src="imagens/raiden-ei-corte.jpg" alt="Raiden Ei">
+            </picture>
+            <div class="caixa bloco3">
+                <h3>Complemento</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit corporis, necessitatibus ipsum veritatis aut quidem aperiam accusantium quae rerum fugiat voluptatem quisquam facilis voluptatum magnam praesentium totam, laboriosam veniam ipsam!</p>
+            </div>
+        </article>
+    </main>
+    <footer id="footer">
+        <p>Site teste desenvolvido por Ian</p>
+    </footer>
+    <div id="caixas">
+        <div class="bloco caixa1"></div>
+        <div class="bloco caixa2"></div>
+        <div class="bloco caixa3"></div>
+        <div class="bloco caixa4"></div>
+    </div>
+</body>
+</html>

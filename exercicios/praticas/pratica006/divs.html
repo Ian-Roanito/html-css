@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #1c4e75
+        }
+
+        h1 {
+            color: #2fa0c6;
+            text-shadow: 1px 1px 2px #3b88a3d0;
+        }
+
+        p {
+            color: #bde5ff;
+        }
+
+        div {
+            background-color: #061826;
+            width: 260px;
+            border-radius: 10px;
+            color: #bde5ff;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            
+        }
+
+        #d1:hover {
+            color: white;
+            background-color: #e61a1ae7;
+        }
+
+        #d2:hover {
+            background-color: #f88b9e;
+            color: white;
+        }
+
+        #d3:hover {
+            background-color: #e92ce9f3;
+            color: white;
+        }
+
+        div > p {
+            color: white;
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Pseudo-classes com div.</h1>
+    <p>Vendo o efeito do Hover abaixo:</p>
+
+    <div id="d1">
+        Aqui eu mudo pra cor Vermelha
+        <p>Cor de fundo: #e61a1ae7</p>
+    </div>
+    <div id="d2">
+        Aqui eu mudo pra cor Rosa
+        <p>Cor de fundo: #f88b9e</p>
+    </div>
+    <div id="d3">
+        Aqui eu mudo pra cor Lilás
+        <p>Cor de fundo: #e92ce9f3</p>
+    </div>
+</body>
+</html>

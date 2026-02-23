@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+:root {
+
+    --cor0: #ffff;
+    --cor1: #f306ac;
+    --cor2: #ec30b4;
+    --cor3: #9e0b72;
+    --cor4: #7a016a;
+
+    --fonte-padrao: Arial. Verdana, helvetica. sans-serif;
+    --fonte-destque: 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header h1 {
+    color: var(--cor0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+}
+
+header p {
+    margin-top: 20px;
+    color: var(--cor0);
+    font-family: var(--fonte-destque);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.342);
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor0);
+    border-radius: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--cor1);
+    color: var(--cor0);
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: var(--cor3);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+
+main h2, h3 {
+    color: var(--cor0);
+    text-indent: 20px;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--cor2), transparent, var(--cor4));
+}
+
+main p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+main img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+main h3 {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: var(--cor4);
+    min-height: 50px;
+    text-align: center;
+}
+
+footer > p {
+    padding-top: 15px;
+    color: var(--cor0);
+}
