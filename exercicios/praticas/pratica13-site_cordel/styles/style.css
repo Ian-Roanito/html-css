@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 30px;
+    font-size: 3em;
+    font-weight: bold; 
+}
+
+header p {
+    margin-top: 10px;
+}
+
+header p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header p > a:hover {
+    text-decoration: underline;
+}
+
+
+
+#primeiro_paragrafo  {
+    background-color: white;
+    height: 100vh;
+    position: relative;
+}
+
+#primeiro_paragrafo > p {
+    position: absolute;
+    font-size: 2em;
+    line-height: 2em;
+    top: 20%;
+    padding: 15px;
+}
+
+#imagem1 {
+    height: 100vh;
+    background: darkgreen url('../imagens/background001.jpg') center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+     
+}
+
+.paragrafo2 > p {
+    font-size: 2em;
+    line-height: 2em;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.342);
+    max-width: 360px;
+    padding: 15px;
+    position: absolute;
+
+    top: 20%;
+}
+
+#paragrafo3 {
+    height: 100vh;
+    height: 1140px;
+    background-color: white;
+    position: relative;
+}
+
+#paragrafo3 > #p1 {
+    position: absolute;
+    font-size: 2em;
+    line-height: 2em;
+    top: 10%;
+    padding: 15px;
+}
+
+#p2 {
+    position: absolute;
+    font-size: 2em;
+    line-height: 2em;
+    padding: 15px;
+    top: 60%;
+}
+
+#imagem2 {
+    height: 100vh;
+    background: gray url('../imagens/background002.jpg') center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.paragrafo4 {
+    position: absolute;
+    font-size: 2em;
+    line-height: 2em;
+    background-color: rgba(128, 128, 128, 0.342);
+    padding: 15px;
+    top: 20%;
+}
+
+#paragrafo5 {
+    height: 100vh;
+    height: 1140px;
+    background-color: white;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#paragrafo5 > #p3 {
+    position: absolute;
+    font-size: 2em;
+    line-height: 2em;
+    top: 10%;
+    padding: 15px;
+}
+
+#p4 {
+    position: absolute;
+    font-size: 2em;
+    line-height: 2em;
+    padding: 15px;
+    top: 60%;
+    
+}
+
+footer {
+    min-height: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer > p {
+    padding-top: 15px;
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
