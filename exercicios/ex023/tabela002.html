@@ -14,11 +14,21 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        
 
         th, td {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -26,8 +36,22 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -37,6 +61,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION - legenda da tabela
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,10 +71,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -164,10 +190,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.421.037</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia autem facilis deleniti quidem molestiae neque dolore voluptate tempora harum quos, odit aliquid incidunt minus corrupti impedit qui natus excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum eveniet harum dolores unde id non molestias perspiciatis consectetur alias ut magni porro, libero odit facilis reprehenderit praesentium vitae! Illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores voluptatem vel, eius aut accusantium a non omnis, voluptates recusandae, commodi iste harum perspiciatis assumenda aliquid saepe mollitia veniam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam dolorum quas incidunt cumque voluptatem ipsa eligendi quisquam quis distinctio, enim odio molestias neque ut aliquid provident? Reiciendis, corporis nulla.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia autem facilis deleniti quidem molestiae neque dolore voluptate tempora harum quos, odit aliquid incidunt minus corrupti impedit qui natus excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum eveniet harum dolores unde id non molestias perspiciatis consectetur alias ut magni porro, libero odit facilis reprehenderit praesentium vitae! Illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores voluptatem vel, eius aut accusantium a non omnis, voluptates recusandae, commodi iste harum perspiciatis assumenda aliquid saepe mollitia veniam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam dolorum quas incidunt cumque voluptatem ipsa eligendi quisquam quis distinctio, enim odio molestias neque ut aliquid provident? Reiciendis, corporis nulla.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia autem facilis deleniti quidem molestiae neque dolore voluptate tempora harum quos, odit aliquid incidunt minus corrupti impedit qui natus excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum eveniet harum dolores unde id non molestias perspiciatis consectetur alias ut magni porro, libero odit facilis reprehenderit praesentium vitae! Illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores voluptatem vel, eius aut accusantium a non omnis, voluptates recusandae, commodi iste harum perspiciatis assumenda aliquid saepe mollitia veniam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam dolorum quas incidunt cumque voluptatem ipsa eligendi quisquam quis distinctio, enim odio molestias neque ut aliquid provident? Reiciendis, corporis nulla.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia autem facilis deleniti quidem molestiae neque dolore voluptate tempora harum quos, odit aliquid incidunt minus corrupti impedit qui natus excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum eveniet harum dolores unde id non molestias perspiciatis consectetur alias ut magni porro, libero odit facilis reprehenderit praesentium vitae! Illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores voluptatem vel, eius aut accusantium a non omnis, voluptates recusandae, commodi iste harum perspiciatis assumenda aliquid saepe mollitia veniam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam dolorum quas incidunt cumque voluptatem ipsa eligendi quisquam quis distinctio, enim odio molestias neque ut aliquid provident? Reiciendis, corporis nulla.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia autem facilis deleniti quidem molestiae neque dolore voluptate tempora harum quos, odit aliquid incidunt minus corrupti impedit qui natus excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum eveniet harum dolores unde id non molestias perspiciatis consectetur alias ut magni porro, libero odit facilis reprehenderit praesentium vitae! Illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores voluptatem vel, eius aut accusantium a non omnis, voluptates recusandae, commodi iste harum perspiciatis assumenda aliquid saepe mollitia veniam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam dolorum quas incidunt cumque voluptatem ipsa eligendi quisquam quis distinctio, enim odio molestias neque ut aliquid provident? Reiciendis, corporis nulla.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia autem facilis deleniti quidem molestiae neque dolore voluptate tempora harum quos, odit aliquid incidunt minus corrupti impedit qui natus excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum eveniet harum dolores unde id non molestias perspiciatis consectetur alias ut magni porro, libero odit facilis reprehenderit praesentium vitae! Illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores voluptatem vel, eius aut accusantium a non omnis, voluptates recusandae, commodi iste harum perspiciatis assumenda aliquid saepe mollitia veniam officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam dolorum quas incidunt cumque voluptatem ipsa eligendi quisquam quis distinctio, enim odio molestias neque ut aliquid provident? Reiciendis, corporis nulla.</p>
 </body>
 </html>
