@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        section {
+            background-color: lightpink;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start; /* <- Mude os valores aqui: stretch(valor padrão), flex-start, flex-end, center, space-between, space-evenly, space-around
+            
+            O aling-content só funciona se o elemento pai tiver flex-wrap: wrap ou wrap-reverse, ele ele integrafo no flex-flow, como é neste exemplo.*/
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando quebra de elementos</h1>
+    <main>
+        <section>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </section>
+    </main>
+</body>
+</html>
