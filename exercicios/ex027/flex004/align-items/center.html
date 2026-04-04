@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aling-items: center;</title>
+
+    <style>
+
+        div.container {
+            background-color: lightgreen;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between; 
+            align-items: center; /* Vai pegar o cross-axis, vai dividir na metate e vai pegar o espaço restante colocando no inicio e no final do cross-axis.*/
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>aling-items: center;</h1>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
