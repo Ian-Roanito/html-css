@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgb(27, 23, 75);
+            width: 40vw;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        a::after {
+            content: '';
+            display: block;
+            position: absolute; /*Como ele tem o postion absolute, pode mexer no top, rigt, bottom e left.*/
+            width: 100%;
+            height: 2px; /* Expessura da borda*/
+            bottom: 0; /*Por padrão do ::after, o item aparece depois do elemnto <a>, passando o bottom: 0; ele vai ficar abaixo e com o left: 0; vai ser jogado totalmente para a esquerda*/
+            left: 0;
+            background-image: linear-gradient(to right, #7cc0e4, #2a7bca, #183872);
+
+            transform: scale(0); /* Começa na escala 0 para ficar escondido*/ 
+
+            transform-origin: right; /* Podendo ser com o valor 'center' para a bordar de baixo começar no meio.*/
+
+            transition: transform 0.3s ease-in-out;
+        }
+
+        a:hover::after { 
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <a href="#">Here</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+            <a href="#">About Me</a>
+        </div>
+    </main>
+</body>
+</html>
