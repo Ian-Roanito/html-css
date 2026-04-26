@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw; /* AVISO: é de extrema inportância que o container tenha width: 100vw e height: vh; para que as medidad de 1fr funcionenm*/
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 70px; /* Aqui a terceira linha ocupara todo o espaço restante da altura que sibrar */
+    grid-template-columns: 1fr 150px; /* Aqui a primeira coluna irá ocupar todo o espaço que sobrar da grid, a segunda coluna terá apenas 150px*/
+    gap: 5px;
+    
+}
+
+
+.caixa {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.interface {
+    max-width: 1280px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+.bloco {
+    width: 100%; /* Definindo uma largura e altura de 100%, para eviat rolamento lateral, provavel de usar isso em todos os blocos do grid */ 
+    height: 100%;
+    background-color: burlywood;
+    margin-bottom: 10px;
+
+    h3 {
+        border: 2px dashed black;
+        padding: 15px;
+    }
+}
+
+#topo {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#menu {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#principal {
+    grid-area: 3 / 1 / 4 / 2;
+    padding: 10px;
+}
+
+#secundario {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#rodape {
+    grid-area: 4 / 1 / 5 / 3;
+}
